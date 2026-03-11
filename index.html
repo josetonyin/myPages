@@ -20,6 +20,144 @@
       margin: 0 auto;
     }
 
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: 0 0 32px;
+      padding: 24px;
+      border: 1px solid #e5e5e5;
+      border-radius: 18px;
+      font-family: Arial, sans-serif;
+    }
+
+    .app-icon {
+      width: 110px;
+      height: 110px;
+      border-radius: 24px;
+      object-fit: cover;
+      flex: 0 0 auto;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .app-meta h1,
+    .app-meta p {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .app-meta h1 {
+      font-size: 32px;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+
+    .app-meta p {
+      color: #595959;
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 620px;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin: 18px 0 0;
+    }
+
+    .detail-card {
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 12px;
+      background: #fafafa;
+    }
+
+    .detail-card strong,
+    .detail-card span {
+      display: block;
+      font-family: Arial, sans-serif;
+    }
+
+    .detail-card strong {
+      font-size: 12px;
+      color: #000000;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .detail-card span {
+      font-size: 14px;
+      color: #595959;
+      line-height: 1.5;
+    }
+
+    .app-sections {
+      display: grid;
+      gap: 18px;
+      margin: 0 0 36px;
+      font-family: Arial, sans-serif;
+    }
+
+    .app-panel {
+      border: 1px solid #e5e5e5;
+      border-radius: 18px;
+      padding: 22px;
+      background: #ffffff;
+    }
+
+    .app-panel h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+      color: #000000;
+    }
+
+    .app-panel p {
+      margin: 0;
+      color: #595959;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .feature-card {
+      border: 1px solid #e9e9e9;
+      border-radius: 14px;
+      padding: 16px;
+      background: #fafafa;
+    }
+
+    .feature-card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.3;
+      color: #000000;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+    }
+
+    .bullet-list {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: #595959;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .bullet-list li {
+      margin-bottom: 6px;
+    }
+
     [data-custom-class='body'], [data-custom-class='body'] * {
       background: transparent !important;
     }
@@ -104,10 +242,156 @@
     .spacer {
       height: 16px;
     }
+
+    @media (max-width: 640px) {
+      .app-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
 <body>
   <main class="container">
+    <section class="app-header" aria-label="App overview">
+      <img class="app-icon" src="app-icon.png" alt="Athmana app icon">
+      <div class="app-meta">
+        <h1>Athmana</h1>
+        <p>
+          Athmana is an iOS Bible reading and notes app by Jose. It supports
+          English and Malayalam Bible content, verse lookup, highlights,
+          reflections, optional location-tagged notes, and optional iCloud note
+          syncing across Apple devices.
+        </p>
+        <div class="detail-grid">
+          <div class="detail-card">
+            <strong>Platform</strong>
+            <span>iPhone and iPad</span>
+          </div>
+          <div class="detail-card">
+            <strong>Languages</strong>
+            <span>English, Malayalam</span>
+          </div>
+          <div class="detail-card">
+            <strong>Core Features</strong>
+            <span>Bible reading, notes, highlights, exports</span>
+          </div>
+          <div class="detail-card">
+            <strong>Developer</strong>
+            <span>Jose</span>
+          </div>
+          <div class="detail-card">
+            <strong>Support</strong>
+            <span>josetonyin@icloud.com</span>
+          </div>
+          <div class="detail-card">
+            <strong>Privacy URL</strong>
+            <span>This page can be used for App Store submission</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-sections" aria-label="App details">
+      <div class="app-panel">
+        <h2>About The App</h2>
+        <p>
+          Athmana is a Bible reading and reflection app designed around a clean,
+          distraction-light reading experience. From the screenshots you shared,
+          the app supports English and Malayalam reading modes, quick book
+          search, direct chapter and verse selection, verse range mode, and a
+          dedicated reflections workspace for saving verses and writing notes.
+        </p>
+        <ul class="bullet-list">
+          <li>Bilingual Bible interface with English and Malayalam toggles</li>
+          <li>Fast book search with filtered results and abbreviation support</li>
+          <li>Single verse or verse-range reading with chapter and verse controls</li>
+          <li>Save-to-Notes flow for collecting verses into named reflections</li>
+          <li>Notes area with text and drawing modes plus export/share tools</li>
+          <li>iPhone and iPad layouts shown in the screenshots</li>
+        </ul>
+      </div>
+
+      <div class="app-panel">
+        <h2>Feature Highlights</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Bilingual Reading</h3>
+            <p>
+              The main Bible screen switches between English and Malayalam, with
+              matching labels, placeholders, and reading output in each language.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Book Search And Selection</h3>
+            <p>
+              Users can type a full book name or abbreviation, browse filtered
+              matches, and jump directly into a selected book.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Verse Range Mode</h3>
+            <p>
+              The interface supports chapter selection plus from/to verse
+              controls, making it easier to read or save verse spans instead of
+              only single verses.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Save To Notes</h3>
+            <p>
+              Verses can be saved into named reflections, and the screenshots
+              show confirmation feedback after a verse is saved.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Reflections Workspace</h3>
+            <p>
+              Saved notes include verse cards, editable thought sections, text
+              formatting tools, drawing support, and management actions.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Cross-Device Experience</h3>
+            <p>
+              The UI adapts across phone and tablet layouts while preserving the
+              same reading and notes workflow.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="app-panel">
+        <h2>Support Details</h2>
+        <div class="detail-grid">
+          <div class="detail-card">
+            <strong>App Name</strong>
+            <span>Athmana</span>
+          </div>
+          <div class="detail-card">
+            <strong>Category</strong>
+            <span>Books and Reference</span>
+          </div>
+          <div class="detail-card">
+            <strong>Use Case</strong>
+            <span>Bible reading, reflection, verse saving, personal notes</span>
+          </div>
+          <div class="detail-card">
+            <strong>Reading Modes</strong>
+            <span>Single verse and verse range</span>
+          </div>
+          <div class="detail-card">
+            <strong>Notes Tools</strong>
+            <span>Thoughts, formatting, drawing, export, sharing</span>
+          </div>
+          <div class="detail-card">
+            <strong>Contact</strong>
+            <span>josetonyin@icloud.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <span class="logo" aria-hidden="true"></span>
 
     <div data-custom-class="body">
