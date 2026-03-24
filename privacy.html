@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athmana Privacy Policy</title>
+  <meta
+    name="description"
+    content="Privacy Policy for Athmana, Jose's iOS Bible and notes app."
+  >
+  <style>
+    body {
+      margin: 0;
+      padding: 32px 16px 64px;
+      background: #ffffff;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .top-nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin: 0 0 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-nav a {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid #dcdcdc;
+      border-radius: 999px;
+      color: #000000;
+      text-decoration: none;
+      font-size: 14px;
+      background: #ffffff;
+    }
+
+    .top-nav a.primary {
+      background: #000000;
+      color: #ffffff;
+      border-color: #000000;
+    }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: 0 0 32px;
+      padding: 24px;
+      border: 1px solid #e5e5e5;
+      border-radius: 18px;
+      font-family: Arial, sans-serif;
+    }
+
+    .app-icon {
+      width: 110px;
+      height: 110px;
+      border-radius: 24px;
+      object-fit: cover;
+      flex: 0 0 auto;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .app-meta h1,
+    .app-meta p {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .app-meta h1 {
+      font-size: 32px;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+
+    .app-meta p {
+      color: #595959;
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 620px;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin: 18px 0 0;
+    }
+
+    .detail-card {
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 12px;
+      background: #fafafa;
+    }
+
+    .detail-card strong,
+    .detail-card span {
+      display: block;
+      font-family: Arial, sans-serif;
+    }
+
+    .detail-card strong {
+      font-size: 12px;
+      color: #000000;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .detail-card span {
+      font-size: 14px;
+      color: #595959;
+      line-height: 1.5;
+    }
+
+    .app-sections {
+      display: grid;
+      gap: 18px;
+      margin: 0 0 36px;
+      font-family: Arial, sans-serif;
+    }
+
+    .app-panel {
+      border: 1px solid #e5e5e5;
+      border-radius: 18px;
+      padding: 22px;
+      background: #ffffff;
+    }
+
+    .app-panel h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+      color: #000000;
+    }
+
+    .app-panel p {
+      margin: 0;
+      color: #595959;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .feature-card {
+      border: 1px solid #e9e9e9;
+      border-radius: 14px;
+      padding: 16px;
+      background: #fafafa;
+    }
+
+    .feature-card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.3;
+      color: #000000;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+    }
+
+    .bullet-list {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: #595959;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .bullet-list li {
+      margin-bottom: 6px;
+    }
+
+    .shots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .shot-card {
+      border: 1px solid #e9e9e9;
+      border-radius: 16px;
+      padding: 12px;
+      background: #fafafa;
+    }
+
+    .shot-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      background: #f0f0f0;
+    }
+
+    .shot-card h3 {
+      margin: 12px 0 6px;
+      font-size: 15px;
+      line-height: 1.35;
+      color: #000000;
+    }
+
+    .shot-card p {
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    [data-custom-class='body'], [data-custom-class='body'] * {
+      background: transparent !important;
+    }
+
+    [data-custom-class='title'], [data-custom-class='title'] * {
+      font-family: Arial !important;
+      font-size: 26px !important;
+      color: #000000 !important;
+    }
+
+    [data-custom-class='subtitle'], [data-custom-class='subtitle'] * {
+      font-family: Arial !important;
+      color: #595959 !important;
+      font-size: 14px !important;
+    }
+
+    [data-custom-class='heading_1'], [data-custom-class='heading_1'] * {
+      font-family: Arial !important;
+      font-size: 19px !important;
+      color: #000000 !important;
+    }
+
+    [data-custom-class='heading_2'], [data-custom-class='heading_2'] * {
+      font-family: Arial !important;
+      font-size: 17px !important;
+      color: #000000 !important;
+    }
+
+    [data-custom-class='body_text'], [data-custom-class='body_text'] * {
+      color: #595959 !important;
+      font-size: 14px !important;
+      font-family: Arial !important;
+    }
+
+    [data-custom-class='link'], [data-custom-class='link'] * {
+      color: #3030f1 !important;
+      font-size: 14px !important;
+      font-family: Arial !important;
+      word-break: break-word !important;
+    }
+
+    ul {
+      list-style-type: square;
+      margin: 10px 0 18px 22px;
+      padding: 0;
+    }
+
+    ol {
+      margin: 10px 0 18px 22px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+    }
+
+    th,
+    td {
+      border: 1px solid #000000;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 3.125rem;
+      width: 11.125rem;
+      height: 2.375rem;
+      background:
+        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzgiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCAxNzggMzgiPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBmaWxsPSIjRDFEMUQxIiBkPSJNNC4yODMgMjQuMTA3Yy0uNzA1IDAtMS4yNTgtLjI1Ni0xLjY2LS43NjhoLS4wODVjLjA1Ny41MDIuMDg2Ljc5Mi4wODYuODd2Mi40MzRILjk4NXYtOC42NDhoMS4zMzJsLjIzMS43NzloLjA3NmMuMzgzLS41OTQuOTUtLjg5MiAxLjcwMi0uODkyLjcxIDAgMS4yNjQuMjc0IDEuNjY1LjgyMi40MDEuNTQ4LjYwMiAxLjMwOS42MDIgMi4yODMgMCAuNjQtLjA5NCAxLjE5OC0uMjgyIDEuNjctLjE4OC40NzMtLjQ1Ni44MzMtLjgwMyAxLjA4LS4zNDcuMjQ3LS43NTYuMzctMS4yMjUuMzd6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iI0QyRDJEMiIgZD0iTTEyMS41NDQgMTQuNTZ2LTEuNzI4aDguMjcydjEuNzI4aC0zLjAyNFYyNGgtMi4yNHYtOS40NGgtMy4wMDh6Ii8+CiAgICA8L2c+Cjwvc3ZnPg==")
+        center no-repeat;
+      background-size: contain;
+    }
+
+    .spacer {
+      height: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .app-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <nav class="top-nav" aria-label="Page links">
+      <a href="index.html">App</a>
+      <a class="primary" href="privacy.html">Privacy Policy</a>
+    </nav>
+
+    <section class="app-header" aria-label="App overview">
+      <img class="app-icon" src="app-icon.png" alt="Athmana app icon">
+      <div class="app-meta">
+        <h1>Athmana</h1>
+        <p>
+          Athmana is an iOS Bible reading and notes app by Jose. It supports
+          English and Malayalam Bible content, verse lookup, highlights,
+          reflections, optional location-tagged notes, and optional iCloud note
+          syncing across Apple devices.
+        </p>
+        <div class="detail-grid">
+          <div class="detail-card">
+            <strong>Platform</strong>
+            <span>iPhone and iPad</span>
+          </div>
+          <div class="detail-card">
+            <strong>Languages</strong>
+            <span>English, Malayalam</span>
+          </div>
+          <div class="detail-card">
+            <strong>Core Features</strong>
+            <span>Bible reading, notes, highlights, exports</span>
+          </div>
+          <div class="detail-card">
+            <strong>Developer</strong>
+            <span>Jose</span>
+          </div>
+          <div class="detail-card">
+            <strong>Support</strong>
+            <span>josetonyin@icloud.com</span>
+          </div>
+          <div class="detail-card">
+            <strong>Privacy URL</strong>
+            <span>This is the dedicated privacy policy page for App Store submission</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-sections" aria-label="App details">
+      <div class="app-panel">
+        <h2>About The App</h2>
+        <p>
+          Athmana is a Bible reading and reflection app designed around a clean,
+          distraction-light reading experience. From the screenshots you shared,
+          the app supports English and Malayalam reading modes, quick book
+          search, direct chapter and verse selection, verse range mode, and a
+          dedicated reflections workspace for saving verses and writing notes.
+        </p>
+        <ul class="bullet-list">
+          <li>Bilingual Bible interface with English and Malayalam toggles</li>
+          <li>Fast book search with filtered results and abbreviation support</li>
+          <li>Single verse or verse-range reading with chapter and verse controls</li>
+          <li>Save-to-Notes flow for collecting verses into named reflections</li>
+          <li>Notes area with text and drawing modes plus export/share tools</li>
+          <li>iPhone and iPad layouts shown in the screenshots</li>
+        </ul>
+      </div>
+
+      <div class="app-panel">
+        <h2>Feature Highlights</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Bilingual Reading</h3>
+            <p>
+              The main Bible screen switches between English and Malayalam, with
+              matching labels, placeholders, and reading output in each language.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Book Search And Selection</h3>
+            <p>
+              Users can type a full book name or abbreviation, browse filtered
+              matches, and jump directly into a selected book.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Verse Range Mode</h3>
+            <p>
+              The interface supports chapter selection plus from/to verse
+              controls, making it easier to read or save verse spans instead of
+              only single verses.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Save To Notes</h3>
+            <p>
+              Verses can be saved into named reflections, and the screenshots
+              show confirmation feedback after a verse is saved.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Reflections Workspace</h3>
+            <p>
+              Saved notes include verse cards, editable thought sections, text
+              formatting tools, drawing support, and management actions.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Cross-Device Experience</h3>
+            <p>
+              The UI adapts across phone and tablet layouts while preserving the
+              same reading and notes workflow.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="app-panel">
+        <h2>App Screens</h2>
+        <p>
+          These screenshots are now loaded directly from the local
+          <strong>images</strong> folder and show the main Athmana experience
+          across iPhone and iPad.
+        </p>
+        <div class="shots-grid">
+          <article class="shot-card">
+            <img
+              src="images/Simulator Screenshot - iPhone 17 - 2026-03-10 at 02.41.05.png"
+              alt="Athmana English Bible reading screen on iPhone"
+            >
+            <h3>English Bible View</h3>
+            <p>
+              Book search, chapter and verse controls, verse range mode, and
+              the reading card for the selected passage.
+            </p>
+          </article>
+          <article class="shot-card">
+            <img
+              src="images/Simulator Screenshot - iPhone 17 - 2026-03-10 at 02.56.42.png"
+              alt="Athmana Malayalam Bible reading screen on iPhone"
+            >
+            <h3>Malayalam Reading Mode</h3>
+            <p>
+              Full Malayalam reading flow with localized search, labels, and
+              passage rendering.
+            </p>
+          </article>
+          <article class="shot-card">
+            <img
+              src="images/Simulator Screenshot - iPad Air 13-inch (M3) - 2026-03-10 at 11.23.41.png"
+              alt="Athmana empty reading state on iPad"
+            >
+            <h3>iPad Layout</h3>
+            <p>
+              The iPad version keeps the same reading workflow with more space
+              for search and passage browsing.
+            </p>
+          </article>
+          <article class="shot-card">
+            <img
+              src="images/Simulator Screenshot - iPad Air 13-inch (M3) - 2026-03-10 at 11.25.03.png"
+              alt="Athmana Malayalam passage and save to notes on iPad"
+            >
+            <h3>Passage And Save Flow</h3>
+            <p>
+              Selected verses can be reviewed and saved into notes from the main
+              reading screen.
+            </p>
+          </article>
+          <article class="shot-card">
+            <img
+              src="images/Simulator Screenshot - iPhone 17 Pro Max - 2026-03-08 at 08.03.43.png"
+              alt="Athmana Malayalam search suggestions on iPhone"
+            >
+            <h3>Search Suggestions</h3>
+            <p>
+              Typeahead book search supports abbreviations and displays matching
+              books while you type.
+            </p>
+          </article>
+          <article class="shot-card">
+            <img
+              src="images/Simulator Screenshot - iPhone 17 Pro Max - 2026-03-08 at 08.04.53.png"
+              alt="Athmana saved confirmation message after saving verse to notes"
+            >
+            <h3>Saved To Notes</h3>
+            <p>
+              Athmana confirms when a verse has been saved into a reflection,
+              keeping the workflow lightweight.
+            </p>
+          </article>
+          <article class="shot-card">
+            <img
+              src="images/Simulator Screenshot - iPhone 17 Pro Max - 2026-03-08 at 08.05.03.png"
+              alt="Athmana notes list on iPhone"
+            >
+            <h3>Reflections List</h3>
+            <p>
+              Notes are organized as reflections with verse counts and creation
+              dates.
+            </p>
+          </article>
+          <article class="shot-card">
+            <img
+              src="images/Simulator Screenshot - iPhone 17 Pro Max - 2026-03-08 at 08.09.40.png"
+              alt="Athmana detailed reflection editor with saved verses and notes tools"
+            >
+            <h3>Reflection Editor</h3>
+            <p>
+              Saved verses, writing tools, formatting controls, and note-editing
+              features are available inside each reflection.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="app-panel">
+        <h2>Support Details</h2>
+        <div class="detail-grid">
+          <div class="detail-card">
+            <strong>App Name</strong>
+            <span>Athmana</span>
+          </div>
+          <div class="detail-card">
+            <strong>Category</strong>
+            <span>Books and Reference</span>
+          </div>
+          <div class="detail-card">
+            <strong>Use Case</strong>
+            <span>Bible reading, reflection, verse saving, personal notes</span>
+          </div>
+          <div class="detail-card">
+            <strong>Reading Modes</strong>
+            <span>Single verse and verse range</span>
+          </div>
+          <div class="detail-card">
+            <strong>Notes Tools</strong>
+            <span>Thoughts, formatting, drawing, export, sharing</span>
+          </div>
+          <div class="detail-card">
+            <strong>Contact</strong>
+            <span>josetonyin@icloud.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <span class="logo" aria-hidden="true"></span>
+
+    <div data-custom-class="body">
+      <div>
+        <strong><span data-custom-class="title"><h1>PRIVACY POLICY</h1></span></strong>
+      </div>
+      <div>
+        <strong><span data-custom-class="subtitle">Last updated March 10, 2026</span></strong>
+      </div>
+
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          This Privacy Notice for <strong>Athmana</strong> ("we," "us," or "our"),
+          describes how and why we may access, collect, store, use, and share
+          your information when you use our mobile application, <strong>Athmana</strong>.
+        </span>
+      </div>
+      <ul>
+        <li data-custom-class="body_text">Download and use our iOS application, Athmana</li>
+        <li data-custom-class="body_text">Read Bible content in English and Malayalam</li>
+        <li data-custom-class="body_text">Create notes, reflections, highlights, and shared note exports</li>
+      </ul>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          Questions or concerns? Reading this Privacy Notice will help you
+          understand your privacy rights and choices. If you do not agree with
+          our policies and practices, please do not use our Services.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+
+      <div style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>SUMMARY OF KEY POINTS</h2></span></strong>
+      </div>
+
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          This summary provides key points from our Privacy Notice. You can use
+          the table of contents below to navigate to each section.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong>What information do we process?</strong> We process information you choose to store in the app, such as notes, verse highlights, drawings, and optional location data attached to notes.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong>Do we process sensitive personal information?</strong> We do not intentionally process sensitive personal information.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong>Do we collect information from third parties?</strong> We do not buy or collect personal information from third-party data brokers.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong>Do we share your information?</strong> Your note data may be stored locally on your device and may sync through Apple's iCloud services if iCloud is enabled on your device.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong>How do we keep your information safe?</strong> We use reasonable technical measures, but no storage or transmission method is guaranteed to be 100% secure.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong>How can you exercise your rights?</strong> You can contact us at <a data-custom-class="link" href="mailto:josetonyin@icloud.com">josetonyin@icloud.com</a>.</span>
+      </div>
+
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+
+      <div id="toc" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>TABLE OF CONTENTS</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#infocollect">1. WHAT INFORMATION DO WE COLLECT?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#infouse">2. HOW DO WE PROCESS YOUR INFORMATION?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#legalbases">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#whoshare">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#inforetain">5. HOW LONG DO WE KEEP YOUR INFORMATION?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#infosafe">6. HOW DO WE KEEP YOUR INFORMATION SAFE?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#privacyrights">7. WHAT ARE YOUR PRIVACY RIGHTS?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#DNT">8. CONTROLS FOR DO-NOT-TRACK FEATURES</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#uslaws">9. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#policyupdates">10. DO WE MAKE UPDATES TO THIS NOTICE?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#contact">11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></div>
+      <div style="line-height: 1.5;"><a data-custom-class="link" href="#request">12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></div>
+
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+
+      <div id="infocollect" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>1. WHAT INFORMATION DO WE COLLECT?</h2></span></strong>
+      </div>
+      <div id="personalinfo" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_2"><h3>Personal information you disclose to us</h3></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong><em>In Short:</em></strong> We collect information that you choose to create or store in the app.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          Athmana lets you read Bible passages and create personal notes,
+          reflections, highlights, drawings, and exported note documents. If
+          you create content in the app, that content is stored on your device.
+        </span>
+      </div>
+      <div class="spacer"></div>
+      <div id="sensitiveinfo" style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong>Sensitive Information.</strong> We do not intentionally process sensitive personal information.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong>Application Data.</strong> If you use our application, we may process the following information if you choose to provide access or use the related features:</span>
+      </div>
+      <ul>
+        <li data-custom-class="body_text"><em>Geolocation Information.</em> Athmana may request access to your location when creating a note so the note can optionally include where it was created. Location use is optional and can be disabled in your device settings.</li>
+        <li data-custom-class="body_text"><em>Mobile Storage and Files.</em> Athmana stores notes and app data locally on your device and may create exported files such as note documents or PDFs when you use sharing features.</li>
+        <li data-custom-class="body_text"><em>iCloud Documents.</em> If iCloud is available and enabled on your device, notes may sync through your iCloud account across your Apple devices.</li>
+        <li data-custom-class="body_text"><em>Diagnostics.</em> We may receive standard Apple crash and diagnostic information made available through Apple's platform services.</li>
+      </ul>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          All information you choose to store in Athmana should be accurate and
+          appropriate for your own use. You can change app permissions in your
+          device settings.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div id="infouse" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>2. HOW DO WE PROCESS YOUR INFORMATION?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong><em>In Short:</em></strong> We process your information to provide the app's reading, note-taking, syncing, exporting, and support features.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">We may process your information for the following purposes:</span>
+      </div>
+      <ul>
+        <li data-custom-class="body_text">To display Bible verses and language-specific content inside the app</li>
+        <li data-custom-class="body_text">To save your notes, highlights, drawings, and verse references</li>
+        <li data-custom-class="body_text">To attach optional location details to notes you create</li>
+        <li data-custom-class="body_text">To sync notes across devices using Apple's iCloud services when available</li>
+        <li data-custom-class="body_text">To generate shared note files or PDFs when you use export or share features</li>
+        <li data-custom-class="body_text">To diagnose crashes, improve app performance, and maintain security</li>
+      </ul>
+
+      <div class="spacer"></div>
+
+      <div id="legalbases" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong><em>In Short:</em></strong> We process personal information only when we have a valid legal basis, such as your consent, our legitimate interests in operating the app, or compliance with law.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">Depending on your location, these legal bases may include:</span>
+      </div>
+      <ul>
+        <li data-custom-class="body_text"><strong>Consent.</strong> For example, when you grant location access or choose to use app features that store your content.</li>
+        <li data-custom-class="body_text"><strong>Legitimate Interests.</strong> To operate, secure, and improve Athmana.</li>
+        <li data-custom-class="body_text"><strong>Legal Obligations.</strong> When disclosure or retention is required by applicable law.</li>
+        <li data-custom-class="body_text"><strong>Vital Interests.</strong> In rare cases where processing is necessary to protect someone from harm.</li>
+      </ul>
+
+      <div class="spacer"></div>
+
+      <div id="whoshare" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong><em>In Short:</em></strong> We share information only in limited situations necessary to operate the app or comply with law.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">We may share your personal information in the following situations:</span>
+      </div>
+      <ul>
+        <li data-custom-class="body_text"><strong>Apple Services.</strong> If you use iCloud syncing, your note data may be stored and transmitted through Apple's iCloud infrastructure subject to Apple's terms and privacy practices.</li>
+        <li data-custom-class="body_text"><strong>Sharing Actions You Initiate.</strong> If you export or share notes or PDFs, the selected content is shared using the iOS share sheet and the destination you choose.</li>
+        <li data-custom-class="body_text"><strong>Legal Requirements.</strong> We may disclose information if required by law, court order, or legal process.</li>
+        <li data-custom-class="body_text"><strong>Business Transfers.</strong> We may share or transfer information in connection with a merger, sale, financing, or acquisition.</li>
+      </ul>
+
+      <div class="spacer"></div>
+
+      <div id="inforetain" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>5. HOW LONG DO WE KEEP YOUR INFORMATION?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong><em>In Short:</em></strong> We keep information only as long as needed for the purposes described in this notice unless a longer period is required by law.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          Notes and related app content are generally kept until you delete them,
+          remove the app, or remove them from your iCloud storage. Some copies
+          may temporarily remain in device backups or iCloud according to Apple's
+          systems and retention practices.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div id="infosafe" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong><em>In Short:</em></strong> We aim to protect your personal information through reasonable technical and organizational safeguards.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          No electronic transmission or storage system can be guaranteed to be
+          completely secure. You should use the app and share exported content
+          only in environments you consider secure.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div id="privacyrights" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>7. WHAT ARE YOUR PRIVACY RIGHTS?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong><em>In Short:</em></strong> Depending on where you live, you may have rights to access, correct, or delete personal information and to withdraw consent.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          You may also manage much of your information directly in the app or on
+          your device by deleting notes, removing shared files, disabling
+          location permissions, or turning off iCloud syncing.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div id="DNT" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>8. CONTROLS FOR DO-NOT-TRACK FEATURES</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          Because Athmana is a mobile app and not a web tracking service, it
+          does not currently respond to browser Do-Not-Track signals.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div id="uslaws" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>9. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong><em>In Short:</em></strong> If you live in certain US states, you may have rights to request access to, correction of, or deletion of your personal information.</span>
+      </div>
+      <div class="spacer"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th><span data-custom-class="body_text"><strong>Category</strong></span></th>
+            <th><span data-custom-class="body_text"><strong>Examples</strong></span></th>
+            <th><span data-custom-class="body_text"><strong>Collected</strong></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span data-custom-class="body_text">Identifiers</span></td>
+            <td><span data-custom-class="body_text">Name, email address, account identifiers</span></td>
+            <td><span data-custom-class="body_text">NO</span></td>
+          </tr>
+          <tr>
+            <td><span data-custom-class="body_text">Geolocation data</span></td>
+            <td><span data-custom-class="body_text">Optional note location from device location services</span></td>
+            <td><span data-custom-class="body_text">YES, if you grant permission and use the feature</span></td>
+          </tr>
+          <tr>
+            <td><span data-custom-class="body_text">User-generated content</span></td>
+            <td><span data-custom-class="body_text">Notes, verse highlights, drawings, exported note files</span></td>
+            <td><span data-custom-class="body_text">YES</span></td>
+          </tr>
+          <tr>
+            <td><span data-custom-class="body_text">Diagnostics</span></td>
+            <td><span data-custom-class="body_text">Crash logs and technical diagnostics made available by Apple</span></td>
+            <td><span data-custom-class="body_text">MAYBE, depending on Apple settings and services</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">We do not sell your personal information and we do not use your personal information for targeted advertising.</span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div id="policyupdates" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>10. DO WE MAKE UPDATES TO THIS NOTICE?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text"><strong><em>In Short:</em></strong> Yes, we may update this notice as needed.</span>
+      </div>
+      <div class="spacer"></div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          The updated version will be indicated by a revised "Last updated" date
+          at the top of this page.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div id="contact" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          If you have questions or comments about this notice, you may email us
+          at <a data-custom-class="link" href="mailto:josetonyin@icloud.com">josetonyin@icloud.com</a>.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div id="request" style="line-height: 1.5;">
+        <strong><span data-custom-class="heading_1"><h2>12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2></span></strong>
+      </div>
+      <div style="line-height: 1.5;">
+        <span data-custom-class="body_text">
+          You may review, update, or delete your data by managing content inside
+          the app, deleting the app, removing files from iCloud if applicable,
+          or contacting us at
+          <a data-custom-class="link" href="mailto:josetonyin@icloud.com">josetonyin@icloud.com</a>.
+        </span>
+      </div>
+
+      <div class="spacer"></div>
+      <div>
+        <span data-custom-class="body_text">
+          This page uses a policy layout inspired by your provided sample and was
+          customized for Athmana's actual app behavior.
+        </span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
